@@ -1,0 +1,45 @@
+nav{
+  padding: 20px 0;
+  border-bottom: 1px solid lighten(black,80%);
+  ul{
+    width: 70vw;
+    margin: 0 auto;
+    .title{
+      font-size: 1.25em;
+      letter-spacing: 1px;
+        font-weight: bolder;
+        color: #5A0000;
+
+      }
+    li{
+      display: inline-block;
+      padding: 1vw;
+      a{
+        color: lighten(black, 2%);
+        font-size:1em;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      i:hover,a:hover{
+        color: #5A0000;
+      }
+      .social-icon{
+        font-size: .55em;
+      }
+    }
+  }
+  @include media($mobile) {
+    ul{
+      width: 100vw;
+       .title{
+         text-align: center;
+        display:inline-block;
+      }
+
+    }
+
+  }
+
+
+}

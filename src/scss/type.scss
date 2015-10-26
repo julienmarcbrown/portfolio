@@ -1,0 +1,25 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: lighten(black, 10%);
+}
+li,a,p,h1,h2,h3,h4,h5{
+  color: lighten(black, 50%);
+}
+
+h1{
+  font-size: 1.5em;
+}
+a{
+  font-size: 1em;
+
+}
+
+
+.contact-icon{
+  padding: 5vw;
+  font-size: 3em;
+  color: black;
+}
+.contact-icon:hover{
+  color: #5A0000;
+}

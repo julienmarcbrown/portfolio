@@ -1,0 +1,51 @@
+
+
+.row{
+  max-width: 100vw;
+  padding: 1vw;
+}
+
+.full-width{
+
+}
+
+.centered-column{
+  padding: 1vw;
+  @include span-columns(12);
+}
+
+
+
+.projects{
+  .project{
+    min-height: 200px;
+    border: 1px solid darken(white,25%);
+    margin: 1vw 0;
+
+    ul{
+      list-style: none;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: red;
+      li{
+        width: 120%;
+        padding: 0;
+        margin: 0;
+        background-color: blue;
+      }
+    }
+    @include span-columns(6);
+
+
+    @include media($tablet) {
+      @include span-columns(4);
+
+    }
+    @include media($mobile) {
+      @include span-columns(4);
+
+
+    }
+  }
+}
